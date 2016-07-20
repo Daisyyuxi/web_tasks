@@ -1,0 +1,23 @@
+﻿ <html>
+ <head>
+ <style type="text/css">
+ body{text-align: center}
+ </style>
+ </head>  
+ <body>
+ <br/><br/>
+ <h1>Log in</h1>
+ <form><b/>
+ ID:<input type="text" name="number">
+ <br/><br/>
+ Password:<input type="password" name="password">
+ <br/><br/>
+ <input type="checkbox" name="remember"/>remember the password
+ <input type="checkbox" name="show"/>show the password
+ <br/><br/>
+ <input type="submit" value="Enter"/>
+ <input type="submit" value="Register"/>
+ </form>
+ 
+ </body>
+ </html>
