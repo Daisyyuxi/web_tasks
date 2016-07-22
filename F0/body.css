@@ -1,0 +1,36 @@
+body{
+      text-align: center;
+      font-family:KaiTi;
+	  padding-top:120px;
+	}
+div   {
+      text-align:center;
+	  border-top-color:white;
+	  border-right:dashed black;
+	  border-bottom-color:white;
+	  border-left:dashed black;
+	  border-width:5px;
+	  background:white;
+	  border-radius:40px;
+	  padding:40px 20px;
+	  
+	}
+p.spread {word-spacing:12px;}
+p.spread1 {word-spacing:20px;}
+
+input{
+	  outline:medium;
+      border:dashed black; 
+	  border-width:1px;
+      border-radius:40px 15px;
+	}
+.button{
+	      outline:medium;
+          background-color:white;
+		  border:dashed black;
+		  border-width:1px;
+          border-radius:50px 15px;
+		  padding:5px 10px;
+		  font-size:13px;
+	      font-family:KaiTi;
+		}
