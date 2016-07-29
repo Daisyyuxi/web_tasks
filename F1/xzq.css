@@ -1,0 +1,62 @@
+	        h1{font-family:KaiTi;
+			   text-align:center;
+			   padding-top:30px;
+			   }
+		    * { 
+		        padding: 0;
+			    margin: 0;
+			} /*默认页面中所有元素的填充值为0，外边距为0*/
+			ul {list-style: none;}
+			.out {
+				position: relative;
+				width: 700px;
+				height: 500px;
+				margin: 50px auto;
+			} /*外轮廓样式*/
+			.out .img li{
+				position: absolute; 
+				display: none;
+			}
+			.out .num {
+				position: absolute; 
+				bottom: 20px;
+				left: 0;
+				font-size: 20px;
+				width: 100%;
+				text-align: center;
+			}
+			.out .num li {
+				width: 20px;
+				height: 20px;
+				display: inline-block;
+				font-size: 15px;
+				background-color: silver;
+				color: white;
+				text-align: center;
+				line-height: 20px;
+				border-radius: 50%;
+				margin: 0 3px;
+				cursor: pointer;
+			} /*数字标签样式*/
+			.out .num li.active { background-color:blue;} /*数字标签被选中后的背景颜色*/
+			.out .btn {
+				position: absolute;
+				top: 50%;
+				width: 30px;
+				height: 50px;
+				margin-top: -30px;
+				background: rgba(0,0,0,.5);
+				color: white;
+				text-align: center;
+				line-height: 50px;
+				font-size: 30px;
+				display: none;
+				border-radius:50%;
+			} /*箭头样式*/
+			.out:hover .btn{ 
+				display: block;
+				cursor: pointer;
+			}
+			.out .left { left: 0;}
+			.out .right { right: 0;}
+	    

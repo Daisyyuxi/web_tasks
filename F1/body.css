@@ -1,0 +1,10 @@
+body{
+     text-align:center;
+	 font-family:KaiTi;
+	 }
+button{
+	  outline:medium;
+	  background-color:silver;
+	  border:black;
+	  border-radius:50px;
+}
