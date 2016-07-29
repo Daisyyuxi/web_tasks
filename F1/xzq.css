@@ -31,22 +31,22 @@
 				display: inline-block;
 				font-size: 15px;
 				background-color: silver;
-				color: white;
+				color: black;
 				text-align: center;
 				line-height: 20px;
 				border-radius: 50%;
-				margin: 0 3px;
-				cursor: pointer;
+				margin: 0 7px;
+				cursor: pointer; /*鼠标覆盖数字标签时箭头变成手指*/
 			} /*数字标签样式*/
-			.out .num li.active { background-color:blue;} /*数字标签被选中后的背景颜色*/
+			.out .num li.active { background-color:gold;} /*数字标签被选中后的背景颜色*/
 			.out .btn {
 				position: absolute;
 				top: 50%;
 				width: 30px;
 				height: 50px;
 				margin-top: -30px;
-				background: rgba(0,0,0,.5);
-				color: white;
+				background: rgba(0,0,0,0.3);
+				color: gold;
 				text-align: center;
 				line-height: 50px;
 				font-size: 30px;
@@ -56,7 +56,7 @@
 			.out:hover .btn{ 
 				display: block;
 				cursor: pointer;
-			}
+			} /*鼠标覆盖区域时的箭头样式*/
 			.out .left { left: 0;}
 			.out .right { right: 0;}
 	    
