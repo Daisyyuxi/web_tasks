@@ -1,53 +1,16 @@
 ﻿<html>
 <head>
-<title>薛之谦</title>
-<link rel="stylesheet" type="text/css" href="xzq.css">
-<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>
-$(function(){
-       var sum = $(".img li").sum();
-	   $(".img li").eq(0).show(); //从第一张图片开始显示
-	   $(".num li").eq(0).addClass("change");
-	   $(".num li").mouseover(function(){
-	   $(this).addClass("change").siblings().removeClass("change");  //鼠标在哪个数字上那个数字添加class为change
-	    			var index=$(this).index();  //定义数字标签的值
-	    			var i=index;  //定义图片标号与数字标签相对应
-	    			$(".img li").eq(index).stop().slideDown(1000).siblings().stop().slideUp(1000);	//鼠标覆盖数字标签显示对应的图片
-					                                                                               //（以前一张图片滑出紧接后一张图片滑入的形式）
-	    		})
-	   var i=0;
-	   var t=setInterval(move,3000);  //设置定时器，以三秒的速度切换图片
-	   function moveL(){
-	    			i--;
-	    			if(i == -1){
-	    				i = sum-1;  //如果这是第一张图片再按向左的按钮直接跳到最后一张图
-	    			}
-	    			$(".num li").eq(i).addClass("change").siblings().removeClass("change");  //对应底部数字添加背景
-					$(".img li").eq(i).slideDown(1000).siblings().slideUp(1000);  //对应图片切换
-	    		}
-				//左按钮点击事件
-	    		$(".out .left").click(function(){
-	    			moveL();	//点击左键调用向左切换函数
-	    		})
-	    		//右按钮点击事件
-	    		$(".out .right").click(function(){
-	    			move();    //点击右键调用向右切换函数
-	    		})
-	    		//定时器开始与结束
-	    		$(".out").hover(function(){
-	    			clearInterval(t);	//鼠标放在轮播区域上时，清除定时器
-	    		},function(){
-	    			t=setInterval(move,3000);  //鼠标移开时定时器继续
-	    		})
-}
-	   }
-
-</script>
+		<title>薛之谦</title>
+		<h1><center/>"我的心愿是世界和平"</h1>
+		<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.11.3/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="xzq.css">
+		<script type="text/javascript" src="xzq.js">
+        </script>
 </head>
-<body>
-<h1>"我的心愿是世界和平！"</h1>
-<body>
+	
+	<body>
 		<div class="out">
+		    <!--插入图片-->
 			<ul class="img">
 				<li><a href="#"><img src="qian1.jpg" width="700px" height="500px" alt=""></a></li>
 				<li><a href="#"><img src="qian2.jpg" width="700px" height="500px" alt=""></a></li>
@@ -55,9 +18,10 @@ $(function(){
 				<li><a href="#"><img src="qian4.jpg" width="700px" height="500px" alt=""></a></li>
 				<li><a href="#"><img src="qian5.jpg" width="700px" height="500px" alt=""></a></li>
 			</ul>
-			<ul class="num">
-				<!--底部数字栏-->
-			<li class="active">1</li>
+			
+			<!--底部数字栏-->
+			<ul class="num">	
+			<li class="active">1</li> <!--打开页面时只有第一张图的数字标签有样式-->
 			<li class="">2</li>
 			<li class="">3</li>
 			<li class="">4</li>
@@ -66,8 +30,5 @@ $(function(){
 			<div class="left btn">&lt;</div>
 			<div class="right btn">&gt;</div>
 		</div>
-	
 
-</body>
-</body>
-</html>
+</body></html>
