@@ -1,62 +1,87 @@
-	        h1{font-family:KaiTi;
-			   text-align:center;
-			   padding-top:30px;
-			   }
-		    * { 
-		        padding: 0;
-			    margin: 0;
-			} /*默认页面中所有元素的填充值为0，外边距为0*/
-			ul {list-style: none;}
-			.out {
-				position: relative;
-				width: 700px;
-				height: 500px;
-				margin: 50px auto;
-			} /*外轮廓样式*/
-			.out .img li{
-				position: absolute; 
-				display: none;
-			}
-			.out .num {
-				position: absolute; 
-				bottom: 20px;
-				left: 0;
-				font-size: 20px;
-				width: 100%;
-				text-align: center;
-			}
-			.out .num li {
-				width: 20px;
-				height: 20px;
-				display: inline-block;
-				font-size: 15px;
-				background-color: silver;
-				color: black;
-				text-align: center;
-				line-height: 20px;
-				border-radius: 50%;
-				margin: 0 7px;
-				cursor: pointer; /*鼠标覆盖数字标签时箭头变成手指*/
-			} /*数字标签样式*/
-			.out .num li.active { background-color:gold;} /*数字标签被选中后的背景颜色*/
-			.out .btn {
-				position: absolute;
-				top: 50%;
-				width: 30px;
-				height: 50px;
-				margin-top: -30px;
-				background: rgba(0,0,0,0.3);
-				color: gold;
-				text-align: center;
-				line-height: 50px;
-				font-size: 30px;
-				display: none;
-				border-radius:50%;
-			} /*箭头样式*/
-			.out:hover .btn{ 
-				display: block;
-				cursor: pointer;
-			} /*鼠标覆盖区域时的箭头样式*/
-			.out .left { left: 0;}
-			.out .right { right: 0;}
-	    
+﻿h1{
+	text-align:center;
+	font-family:KaiTi;
+	padding-top:20px;
+  }  
+  
+* { 
+  padding: 0;
+  margin: 0;
+  } /*默认页面中所有元素的填充值为0，外边距为0*/
+  
+ul {list-style: none;}
+
+.pic{
+	 position: relative;
+	 width: 700px;
+	 height: 500px;
+     margin: 20px auto;
+	 cursor: pointer;
+    } /*图片大小和位置*/
+
+.pic .img li{
+	      position: absolute;
+	      display:none; /*图片先隐藏，选中之后再显示*/
+          }
+
+.pic .num{
+		 position: absolute; 
+		 bottom: 20px;
+		 right:0;
+		 font-size: 20px;
+		 width: 100%;
+		 text-align: center;
+	     } /*数字标签样式总体设置*/
+
+.pic .num li{
+	      width: 20px;
+	      height: 20px;
+	      font-size: 15px;
+	      background-color: silver;
+	      color: black;
+	      text-align: center;
+	      line-height: 20px;
+	      border-radius: 50%;
+	      margin: 7px;;
+	      cursor: pointer;
+	      display: inline-block; /*数字横着放置*/
+          }	  /*数字具体样式设置*/
+
+.pic .num li.color{background-color:gold;}
+
+.pic .jt{
+	    position: absolute;
+	    top: 50%;
+	    width: 30px;
+	    height: 50px;
+	    margin-top: 0;
+	    background: rgba(0,0,0,0.3);
+	    color: gold;
+	    text-align: center;
+	    line-height: 50px;
+	    font-size: 30px;
+	    display:none;
+	    border-radius:50%;
+	    } /*箭头样式设置*/
+
+.pic .L{left:0;}
+.pic .R{right:0;} /*左右箭头位置设置*/
+
+.pic:hover .jt{ 
+			  display: block;
+			  cursor: pointer;
+			  } /*鼠标覆盖区域时的箭头样式*/
+
+body .pic{
+	     text-align:center;
+	     border-top:dashed gold;
+         border-right-color:white;
+	     border-bottom:dashed gold;
+	     border-left-color:white;
+	     border-width:3px;
+	     background:white;
+         border-radius:40px;
+	     padding:30px 30px;
+        } /*在整体图片外添加边框*/
+
+	  
